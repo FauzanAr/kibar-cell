@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-unused-vars": "warn",
+    "indent": ["error", 2],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-tag-spacing": ["error", {
+      "beforeSelfClosing": "proportional-always",
+      "beforeClosing": "never"
+    }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
