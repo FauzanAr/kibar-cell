@@ -1,21 +1,27 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
-    "react"
+    "react",
+    "@typescript-eslint"
   ],
   "rules": {
     "quotes": ["error", "single"],
     "no-unused-vars": "warn",
     "indent": ["error", 2],
     "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
     "react/jsx-tag-spacing": ["error", {
       "beforeSelfClosing": "proportional-always",
       "beforeClosing": "never"
-    }]
+    }],
+    "@typescript-eslint/indent": ["error", 2]
   },
   "settings": {
     "react": {
