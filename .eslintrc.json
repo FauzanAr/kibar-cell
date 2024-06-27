@@ -11,6 +11,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "semi": "off",
     "quotes": ["error", "single"],
     "no-unused-vars": "warn",
     "indent": ["error", 2],
@@ -21,7 +22,8 @@
       "beforeSelfClosing": "proportional-always",
       "beforeClosing": "never"
     }],
-    "@typescript-eslint/indent": ["error", 2]
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/semi": "error"
   },
   "settings": {
     "react": {
