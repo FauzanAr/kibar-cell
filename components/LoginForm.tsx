@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React, { FormEvent, useEffect, useState } from 'react';
 import { FaRegUser } from 'react-icons/fa';
@@ -50,7 +50,7 @@ export default function LoginForm() {
   const toggleVisibility = () => setIsVisible(!isVisible);
 
   useEffect(() => {
-    dummyLoad()
+    dummyLoad();
   }, []);
 
   return (
@@ -110,7 +110,7 @@ export default function LoginForm() {
             <button type="submit" className="mt-5 mb-2 w-full lg:w-1/2 mx-auto group relative flex items-center justify-center overflow-hidden rounded-md p-0.5" disabled={pending}>
               <span className="absolute h-full w-full bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500"></span>
               <span className="relative z-10 rounded-md bg-white py-1.5 transition-all ease-out group-hover:bg-opacity-0 w-full flex items-center justify-center">
-                <span className="relative bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text text-transparent group-hover:text-white">{pending ? "Loading..." : "Login"}</span>
+                <span className="relative bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text text-transparent group-hover:text-white">{pending ? 'Loading...' : 'Login'}</span>
               </span>
             
             </button>
